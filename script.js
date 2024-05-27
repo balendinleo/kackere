@@ -81,6 +81,6 @@ document.getElementById('champion-form').addEventListener('submit', function(eve
     const ratio = (teamChampionships / totalYears).toFixed(2);
 
     const resultText = `Doğum yılınızdan itibaren ${selectedTeam} takımı ${teamChampionships} kez şampiyon olmuştur. 
-    Bu da ${totalYears} yıllık süreçte %${ratio} oranına denk gelmektedir.`;
+    Bu da ${totalYears} yıllık süreçte ${(ratio * 100).toFixed(2)}% oranına denk gelmektedir.`;
     document.getElementById('result').innerText = resultText;
 });
