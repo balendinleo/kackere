@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <title>Şampiyonluk Oranı Hesaplama</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="scriptv105.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="scriptv106.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Şampiyonluk Oranı Hesaplama</h1>
-        <form id="champion-form">
-            <label for="birth-year">Doğum Yılı:</label>
-            <input type="number" id="birth-year" name="birth-year" min="1900" max="2023" required>
-            <br><br>
-            <label for="team">Tuttuğunuz Takım:</label>
-            <select id="team" name="team" required>
-                <option value="Galatasaray">Galatasaray</option>
-                <option value="Fenerbahçe">Fenerbahçe</option>
-                <option value="Beşiktaş">Beşiktaş</option>
-                <option value="Trabzonspor">Trabzonspor</option>
-                <!-- Diğer takımları da buraya ekleyebilirsiniz -->
-            </select>
-            <br><br>
-            <button type="submit">Hesapla</button>
+    <div class="container mt-5">
+        <h1 class="text-center">Şampiyonluk Oranı Hesaplama</h1>
+        <form id="champion-form" class="text-center">
+            <div class="form-group">
+                <label for="birth-year">Doğum Yılı:</label>
+                <input type="number" class="form-control" id="birth-year" name="birth-year" min="1900" max="2023" required>
+            </div>
+            <div class="form-group">
+                <label for="team">Tuttuğunuz Takım:</label>
+                <select class="form-control" id="team" name="team" required>
+                    <option value="Galatasaray">Galatasaray</option>
+                    <option value="Fenerbahçe">Fenerbahçe</option>
+                    <option value="Beşiktaş">Beşiktaş</option>
+                    <option value="Trabzonspor">Trabzonspor</option>
+                    <!-- Diğer takımları da buraya ekleyebilirsiniz -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Hesapla</button>
         </form>
-        <h2 id="result"></h2>
+        <h2 id="result" class="text-center mt-3"></h2>
+        <div id="championships" class="text-center mt-3"></div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
