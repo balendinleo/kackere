@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Şampiyonluk Oranı Hesaplama</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Şampiyonluk Oranı Hesaplama</h1>
+        <form id="champion-form">
+            <label for="birth-year">Doğum Yılı:</label>
+            <input type="number" id="birth-year" name="birth-year" min="1959" max="2023" required>
+            <br><br>
+            <label for="team">Tuttuğunuz Takım:</label>
+            <select id="team" name="team" required>
+                <option value="Galatasaray">Galatasaray</option>
+                <option value="Fenerbahçe">Fenerbahçe</option>
+                <option value="Beşiktaş">Beşiktaş</option>
+                <option value="Trabzonspor">Trabzonspor</option>
+                <!-- Diğer takımları da buraya ekleyebilirsiniz -->
+            </select>
+            <br><br>
+            <button type="submit">Hesapla</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+</body>
+</html>
