@@ -37,7 +37,7 @@ const championsData = [
     { year: 1993, champion: "Galatasaray" },
     { year: 1994, champion: "Galatasaray" },
     { year: 1995, champion: "Beşiktaş" },
-    { year: 1996, champion: "Galatasaray" },
+    { year: 1996, champion: "Fenerbahçe" },
     { year: 1997, champion: "Galatasaray" },
     { year: 1998, champion: "Galatasaray" },
     { year: 1999, champion: "Galatasaray" },
