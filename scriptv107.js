@@ -1,7 +1,7 @@
 // Şampiyonlar verisini JSON formatında tutuyoruz
 const championsData = [
-	{ year: 1957, champion: "Beşiktaş" },
-	{ year: 1959, champion: "Beşiktaş" },
+    { year: 1957, champion: "Beşiktaş" },
+    { year: 1959, champion: "Beşiktaş" },
     { year: 1959, champion: "Fenerbahçe" },
     { year: 1960, champion: "Beşiktaş" },
     { year: 1961, champion: "Fenerbahçe" },
